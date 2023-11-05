@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 2494665829321353210, guid: 9b563443d9ad6e44baeda5949afa30ab, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 5efc9b536df2d3d40ba113972cfb3113, type: 2}
+      objectReference: {fileID: 2100000, guid: fe7b117d9e1dd634fac09bd6ba77edae, type: 2}
     - target: {fileID: 4646518925747246260, guid: 9b563443d9ad6e44baeda5949afa30ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5efc9b536df2d3d40ba113972cfb3113, type: 2}
     - target: {fileID: 6565076417904369687, guid: 9b563443d9ad6e44baeda5949afa30ab, type: 3}
       propertyPath: m_Name
-      value: RaceCar (1) Variant
+      value: RaceCarBlue
       objectReference: {fileID: 0}
     - target: {fileID: 6922712751194427673, guid: 9b563443d9ad6e44baeda5949afa30ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
