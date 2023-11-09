@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20;
-    // Update is called once per frame
 
     private void Start()
     {
@@ -14,5 +13,16 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += transform.forward * speed * Time.deltaTime;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Boom")
+        {
+            //Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<Health>().Damage();
+        }
+        
+        Destroy(gameObject);
     }
 }

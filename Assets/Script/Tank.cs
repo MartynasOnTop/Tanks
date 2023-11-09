@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Tank : MonoBehaviour
 {
+    public AudioSource shoot;
+
     public float speed = 5;
     public float rotateSpeed = 90;
 
@@ -20,7 +22,8 @@ public class Tank : MonoBehaviour
     void Update()
     {
         var ver = Input.GetAxis(vertical);
-        transform.position += transform.forward * speed * ver * Time.deltaTime;
+        //transform.position += transform.forward * speed * ver * Time.deltaTime;
+        GetComponent<Rigidbody>().velocity = transform.forward * speed * ver;
 
         var hor = Input.GetAxis(horizontal);
         transform.Rotate(0, rotateSpeed * hor * Time.deltaTime, 0);
@@ -28,6 +31,7 @@ public class Tank : MonoBehaviour
         if (Input.GetKeyDown(shootKey))
         {
             Instantiate(bullet, shootPoint.position, shootPoint.rotation);
+            shoot.Play();
         }
     }
 }
