@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6053741572615906748}
   - component: {fileID: 3533916817616456291}
   - component: {fileID: 7427085889416695277}
+  - component: {fileID: 6836385143628822317}
   m_Layer: 0
   m_Name: tank1
-  m_TagString: Untagged
+  m_TagString: Boom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,6 +196,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6836385143628822317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361874119869054161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12592512a853b9141b5403c842fe5e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 0}
+  particleCount: 15
+  hp: 10
+  destroy: {fileID: 0}
+  hit: {fileID: 0}
 --- !u!1 &2692247284518467236
 GameObject:
   m_ObjectHideFlags: 0

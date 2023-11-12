@@ -9,10 +9,12 @@ public class Health : MonoBehaviour
     public int hp;
 
     public AudioSource destroy;
+    public AudioSource hit;
 
     public void Damage()
     {
         hp--;
+        hit.Play();
         if (hp <= 0)
         {
             Die(); 

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Tank : MonoBehaviour
 {
     public AudioSource shoot;
+    public AudioSource drive;
 
     public float speed = 5;
     public float rotateSpeed = 90;
@@ -32,6 +33,14 @@ public class Tank : MonoBehaviour
         {
             Instantiate(bullet, shootPoint.position, shootPoint.rotation);
             shoot.Play();
+        }
+        if (Input.anyKeyDown)
+        {
+            drive.Play();
+        }
+        else
+        {
+            drive.Stop();
         }
     }
 }

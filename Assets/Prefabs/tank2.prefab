@@ -44,9 +44,10 @@ GameObject:
   - component: {fileID: 1397650447756300741}
   - component: {fileID: 3522103974427174902}
   - component: {fileID: 1806448222454194318}
+  - component: {fileID: -3760443029447145779}
   m_Layer: 0
   m_Name: tank2
-  m_TagString: Untagged
+  m_TagString: Boom
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,6 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38857f9c9079184fbea1221c21d3213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shoot: {fileID: 0}
   speed: 7
   rotateSpeed: 120
   vertical: Vertical2
@@ -128,6 +130,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &-3760443029447145779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466732174788622922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12592512a853b9141b5403c842fe5e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 0}
+  particleCount: 15
+  hp: 5
+  destroy: {fileID: 0}
+  hit: {fileID: 0}
 --- !u!1001 &9205200979945389205
 PrefabInstance:
   m_ObjectHideFlags: 0
